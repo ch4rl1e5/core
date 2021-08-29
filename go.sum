@@ -1,5 +1,7 @@
 github.com/benbjohnson/clock v1.1.0 h1:Q92kusRqC1XV2MjkWETPvjJVqKetz1OzxZB7mHJLju8=
 github.com/benbjohnson/clock v1.1.0/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZxNJlLklBHA=
+github.com/ch4rl1e5/core v0.0.0-20210829011240-2e7e2b8e0a48 h1:HB8CLVVrVTBl2HJFzwmZFqIxbBNBvbkQO+V3yK3dH/4=
+github.com/ch4rl1e5/core v0.0.0-20210829011240-2e7e2b8e0a48/go.mod h1:EmMMNaJGe43cRg1lAGsJlFMlezohqa6hAHbFl8ya7JY=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

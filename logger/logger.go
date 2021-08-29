@@ -1,7 +1,7 @@
 package logger
 
 import (
-	"github.com/ch4rl1e5/core/constants"
+	"github.com/ch4rl1e5/go-common/constants"
 	"go.uber.org/zap"
 )
 

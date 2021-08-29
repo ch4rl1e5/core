@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"github.com/ch4rl1e5/core/constants"
-	"github.com/ch4rl1e5/core/httphelper"
+	"github.com/ch4rl1e5/go-common/constants"
+	"github.com/ch4rl1e5/go-common/httphelper"
 	"github.com/go-chi/chi/v5"
 	"github.com/google/uuid"
 	"net/http"

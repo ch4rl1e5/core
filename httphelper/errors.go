@@ -3,7 +3,7 @@ package httphelper
 import (
 	"encoding/json"
 	"errors"
-	"github.com/ch4rl1e5/core/logger"
+	"github.com/ch4rl1e5/go-common/logger"
 	"go.uber.org/zap"
 	"net/http"
 )
