@@ -1,4 +1,4 @@
-module github.com/ch4rl1e5/core
+module github.com/ch4rl1e5/go-common
 go 1.16
 
 require (
