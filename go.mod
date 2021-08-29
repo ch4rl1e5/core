@@ -1,4 +1,4 @@
-module github.com/ch4rl1e5/core
+module github.com/ch4rl1e5/core.git
 
 go 1.16
 
