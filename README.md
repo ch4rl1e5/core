@@ -1,1 +1,1 @@
-# core
+# go common
