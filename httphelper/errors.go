@@ -11,7 +11,7 @@ import (
 var ErrInvalidUUID = errors.New("invalid uuid")
 
 type HTTPError struct {
-	Description string // error description
+	Description string 	// error description
 	Status      int    `example:"500"` // status code (e.g. 500,404,400,200,201)
 }
 
