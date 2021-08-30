@@ -19,7 +19,16 @@ var MapErrors = map[string]HTTPError{}
 
 func HandleError(w http.ResponseWriter, err error) {
 	httpError := registeredError(err)
-	http.Error(w, httpError.Description, httpError.Status)
+	jsonError, err := json.Marshal(httpError)
+	if err != nil {
+		logger.ZapLogger.Panic("error:", zap.Error(err))
+	}
+	w.WriteHeader(httpError.Status)
+	_, err = w.Write(jsonError)
+	if err != nil {
+		logger.ZapLogger.Panic("error:", zap.Error(err))
+		return
+	}
 }
 
 func JsonResponse(w http.ResponseWriter, response interface{}) {
