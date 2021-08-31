@@ -17,6 +17,10 @@ type HTTPError struct {
 
 var MapErrors = map[string]HTTPError{}
 
+func (e HTTPError) Error() string {
+	return e.Description
+}
+
 func HandleError(w http.ResponseWriter, err error) {
 	httpError := registeredError(err)
 	jsonError, err := json.Marshal(httpError)
@@ -25,19 +29,6 @@ func HandleError(w http.ResponseWriter, err error) {
 	}
 	w.WriteHeader(httpError.Status)
 	_, err = w.Write(jsonError)
-	if err != nil {
-		logger.ZapLogger.Panic("error:", zap.Error(err))
-		return
-	}
-}
-
-func JsonResponse(w http.ResponseWriter, response interface{}) {
-	jsonResponse, err := json.Marshal(response)
-	if err != nil {
-		logger.ZapLogger.Panic("error:", zap.Error(err))
-	}
-
-	_, err = w.Write(jsonResponse)
 	if err != nil {
 		logger.ZapLogger.Panic("error:", zap.Error(err))
 		return
